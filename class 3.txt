@@ -1,0 +1,143 @@
+
+For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+*** JSON iterate for loop****
+var json = {
+   jsonData:  [
+       {one: [11, 12, 13, 14, 15]},
+       {two: [21, 22, 23]},
+       {three: [31, 32]}
+   ]
+}; 
+for (var i=0; i<json.jsonData.length; i++) {
+   for (var key in json.jsonData[i]) {
+       for (var j= 0; j<json.jsonData[i][key].length; j++) {
+           console.log(json.jsonData[i][key][j])
+       }
+   }
+}
+
+*** JSON iterate for in loop ****
+var person = {
+   fname: "Nick",
+   lname: "Jonas",
+   age: 26
+}; 
+for (let x in person) {
+   console.log(x + ": "+ person[x])
+}
+
+
+*** JSON iterate for in loop ****
+var person = {
+   fname: "Nick",
+   lname: "Jonas",
+   age: 26
+}; 
+for (let x in person) {
+   console.log(x + ": "+ person[x])
+}
+let language = "JavaScript";
+
+let text = "";
+for (let x of language) {
+text += x;
+}
+----------------------------------------------------------------
+{
+  "basics": {
+    "name": "nathiya",
+    "label": "",
+    "email": "nathiyaece@gmail.com",
+    "phone": "96589555.",
+    "degree": "",
+    "location": {
+      "address": "3/281,muthanampalayam,tripur",
+      "postalCode": "624709",
+      "city": "tripur",
+      "countryCode": "india",
+      "region": "tamilnadu"
+    },
+    "profiles": [
+      {
+        "network": nathiyaayyadurai",
+        "username": "diyaadurai",
+        "url": "https://www.linkedin.com/in/nathiyaayyadurai/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "265659",
+      "position": "Engineer",
+      "website": "https://www.linkedin.com/in/nathiyaayyadurai/",
+      "startDate": "13-06-2019",
+      "endDate": "06-03-2022",
+      "summary": "A one-sentence to one-paragraph summary of this employer or position",
+      "highlights": [
+        "i am sports player"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      ""company": "265659",
+      "position": "Engineer",
+      "website": "https://www.linkedin.com/in/nathiyaayyadurai/",
+      "startDate": "13-06-2019",
+      "endDate": "06-03-2022",
+      "summary": "A one-sentence to one-paragraph summary of this employer or position",
+      "highlights": [
+        "i am sports player"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "SBm college of engg & tech",
+      "area": "ECE",
+      "studyType": "",
+      "startDate": "13-06-2019",
+      "endDate": "06-03-2022",
+      "gpa": "",
+      "courses": [
+        ""
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "compled DCA COURSE",
+      "date": "06-03-2022",
+      "awarder": "facuality",
+      "summary": "A one-sentence to one-paragraph overview of this award"
+    }
+  ],
+  
+  "skills": [
+    {
+      "name": "python,java script')",
+      "level": "beginer",
+      "keywords": [
+        "Keywords under this category (e.g. 'Java', 'C++', etc)"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Language name",
+      "fluency": "Your language fluency"
+    }
+  ],
+  "interests": [
+    {
+      "name": "A category of interests (e.g. 'Sports')",
+      "keywords": [
+        "Keywords under this category (e.g. 'Cricket', 'Football', 'Golf')"
+      ]
+    }
+  ]
+}
+
+--------------------------------------------------------------
+
